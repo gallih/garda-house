@@ -23,7 +23,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
       <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -36,16 +36,16 @@ AppAsset::register($this);
 
             <a href="index.html" class="logo d-flex align-items-center">
                 <img src="FlexStart/assets/img/logo.png" alt="">
-                <span>Garda-House</span>
+                <span>Gallih Armada</span>
             </a>
 
             <nav id="navbar" class="navbar">
                 <ul>
                 <li><a class="nav-link scrollto active" href="#hero">About</a></li>
                 <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                <li><a class="nav-link scrollto" href="#portfolio">Portofolio</a></li>
-                <li><a class="nav-link scrollto" href="#blog">Blog</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+                <li><a class="nav-link scrollto" href="#portfolio">Portofolio & Testimonial</a></li>
+                <li><a class="nav-link scrollto" href="#recent-blog-posts">Blog</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact Me</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -57,13 +57,7 @@ AppAsset::register($this);
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
+<?= $this->render('footer') ?>
 
 <?php $this->endBody() ?>
 </body>
